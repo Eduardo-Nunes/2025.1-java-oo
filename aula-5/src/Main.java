@@ -19,7 +19,11 @@ public class Main {
 
         pessoa.greetings();
 
-        Aluno aluno = new Aluno("Ingrid", 32, 101000, 10,10,10, 0);
+        Aluno aluno = new Aluno("Ingrid", 32, 101000);
+
+        aluno.setNota1(10);
+        aluno.setNota2(9.9);
+        aluno.setNota3(10);
 
         aluno.calcularMedia();
 
