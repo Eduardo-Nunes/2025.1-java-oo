@@ -1,6 +1,6 @@
 package pratica1;
 
-public class Pessoa {
+public abstract class Pessoa {
     protected String nome;
     protected int idade;
 
@@ -10,18 +10,6 @@ public class Pessoa {
     public Pessoa(String nome, int idade) {
         this.nome = nome;
         this.idade = idade;
-    }
-
-    @Override
-    public String toString() {
-        return "Pessoa{" +
-                "nome='" + nome + '\'' +
-                ", idade=" + idade +
-                '}';
-    }
-
-    public void aniversario(){
-        idade++;
     }
 
     public String getNome() {
@@ -38,6 +26,21 @@ public class Pessoa {
 
     public void setIdade(int idade) {
         this.idade = idade;
+    }
+
+    @Override
+    public String toString() {
+        return "Pessoa{" +
+                "nome='" + nome + '\'' +
+                ", idade=" + idade +
+                '}';
+    }
+
+    public abstract void quemSouEu();
+    public abstract void minhaAtividade();
+
+    public void aniversario(){
+        idade++;
     }
 
     public void greetings(){

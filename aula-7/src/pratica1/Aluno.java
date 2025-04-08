@@ -13,19 +13,6 @@ public class Aluno extends Pessoa{
         this.matricula = matricula;
     }
 
-    @Override
-    public String toString() {
-        return "Aluno{" +
-                "matricula=" + matricula +
-                ", nota1=" + nota1 +
-                ", nota2=" + nota2 +
-                ", nota3=" + nota3 +
-                ", media=" + media +
-                ", nome='" + nome + '\'' +
-                ", idade=" + idade +
-                '}';
-    }
-
     public double getNota1() {
         return nota1;
     }
@@ -58,6 +45,29 @@ public class Aluno extends Pessoa{
         this.media = media;
     }
 
+    @Override
+    public String toString() {
+        return "Aluno{" +
+                "matricula=" + matricula +
+                ", nota1=" + nota1 +
+                ", nota2=" + nota2 +
+                ", nota3=" + nota3 +
+                ", media=" + media +
+                ", nome='" + nome + '\'' +
+                ", idade=" + idade +
+                '}';
+    }
+
+    @Override
+    public void quemSouEu() {
+        System.out.println("Eu sou um Aluno");
+    }
+
+    @Override
+    public void minhaAtividade() {
+        System.out.println("Aprender");
+    }
+
     public void calcularMedia(){
         if (nota3 == 0.0){
             media = (nota1 + nota2)/2;
@@ -78,5 +88,6 @@ public class Aluno extends Pessoa{
     public void greetings() {
         super.greetings();
         System.out.println("Minha média é: " + media );
+        System.out.println("Minha matricula é: " + matricula );
     }
 }
