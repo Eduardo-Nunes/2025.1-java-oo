@@ -2,7 +2,7 @@ package pratica2;
 
 import pratica1.Pessoa;
 
-public class Coordenador extends Pessoa {
+public class Coordenador extends Pessoa implements Remuneravel {
     private String curso;
 
     public Coordenador() {
@@ -29,5 +29,15 @@ public class Coordenador extends Pessoa {
     @Override
     public void minhaAtividade() {
         System.out.println("Coordenar");
+    }
+
+    @Override
+    public void calcularSalario() {
+
+    }
+
+    @Override
+    public void aplicarBonus() {
+
     }
 }

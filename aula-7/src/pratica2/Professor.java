@@ -2,7 +2,7 @@ package pratica2;
 
 import pratica1.Pessoa;
 
-public final class Professor extends Pessoa {
+public final class Professor extends Pessoa implements Remuneravel{
     private String especialidade;
     private Cargo cargo;
 
@@ -49,5 +49,15 @@ public final class Professor extends Pessoa {
     @Override
     public void minhaAtividade() {
         System.out.println("Ensinar");
+    }
+
+    @Override
+    public void calcularSalario() {
+
+    }
+
+    @Override
+    public void aplicarBonus() {
+
     }
 }

@@ -1,5 +1,4 @@
 import pratica1.Aluno;
-import pratica1.Pessoa;
 import pratica2.Cargo;
 import pratica2.Disciplina;
 import pratica2.Professor;
@@ -35,6 +34,7 @@ public class Main {
         d1.setNome(sc.nextLine());
         d1.cadastrarAluno(a1);
         d1.ministrarDisciplina(p1);
+        d1.setCargaHoraria(80);
 
         System.out.println("\nInformações da Disciplina:");
         System.out.println(d1);
