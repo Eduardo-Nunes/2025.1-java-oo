@@ -2,7 +2,7 @@ package pratica2;
 
 import pratica1.Pessoa;
 
-public final class Professor extends Pessoa implements Remuneravel{
+public final class Professor extends Pessoa implements iRemunerate {
     private String especialidade;
     private Cargo cargo;
 

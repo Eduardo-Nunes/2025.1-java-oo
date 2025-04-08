@@ -1,6 +1,6 @@
 package pratica2;
 
-public interface Remuneravel {
+public interface iRemunerate {
     void calcularSalario();
     void aplicarBonus();
 }

@@ -2,7 +2,7 @@ package pratica2;
 
 import pratica1.Pessoa;
 
-public class Coordenador extends Pessoa implements Remuneravel {
+public class Coordenador extends Pessoa implements iRemunerate {
     private String curso;
 
     public Coordenador() {
